@@ -22,7 +22,10 @@ check2,
  AuthController.authRegister)
 
 
-router.post("/login",AuthController.authLogin)
+router.post("/login",
+check1,
+check2,
+AuthController.authLogin)
 
 
- 
+module.exports = router
